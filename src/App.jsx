@@ -1,12 +1,12 @@
-import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Home from './pages/Home'
-import Login from './pages/Login'
-import Signup from './pages/Signup'
-import Doctors from './pages/Doctors'
-import PatientDashboard from './pages/PatientDashboard'
-import DoctorDashboard from './pages/DoctorDashboard'
-import './App.css'
+import { Routes, Route } from 'react-router-dom'  // for the routing system
+import Navbar from './components/Navbar'            // your navbar component
+import Home from './pages/Home'                     // home page
+import Login from './pages/Login'                   // login page
+import Signup from './pages/Signup'                 // signup page
+import Doctors from './pages/Doctors'               // doctors page
+import PatientDashboard from './pages/PatientDashboard'   // patient dashboard
+import DoctorDashboard from './pages/DoctorDashboard'     // doctor dashboard
+import './App.css'                                  // your global styles
 
 function App() {
   return (

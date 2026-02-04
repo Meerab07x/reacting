@@ -25,7 +25,7 @@ export function AuthProvider({ children }) {
         setUserType('doctor')
         return true
       }
-    }
+    }                                         
     return false
   }
 
