@@ -6,7 +6,6 @@ import { AuthProvider } from './context/AuthContext'
 import { initializeData } from './data/mockData'
 import './index.css'
 
-// Initialize data on app start
 initializeData()
 
 ReactDOM.createRoot(document.getElementById('root')).render(

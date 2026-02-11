@@ -1,7 +1,6 @@
 import { patients, doctors } from '../data/mockData'
 
 function Patients() {
-  // Helper function to get doctor name
   const getDoctorName = (doctorId) => {
     const doctor = doctors.find(d => d.id === doctorId)
     return doctor ? doctor.name : 'Unknown'

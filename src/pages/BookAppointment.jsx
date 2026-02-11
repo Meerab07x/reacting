@@ -14,7 +14,6 @@ function BookAppointment() {
     e.preventDefault()
     alert('Appointment booked successfully!')
     console.log('Appointment:', formData)
-    // Reset form
     setFormData({
       patientId: '',
       doctorId: '',

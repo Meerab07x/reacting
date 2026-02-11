@@ -41,7 +41,6 @@ function Signup() {
     const doctors = getDoctors()
     const conditions = medicalConditions.toLowerCase()
     
-    // Simple logic to assign doctor based on conditions
     if (conditions.includes('heart') || conditions.includes('cardio')) {
       return doctors.find(d => d.specialty === 'Cardiology') || doctors[0]
     } else if (conditions.includes('child') || conditions.includes('pediatric')) {
@@ -49,7 +48,6 @@ function Signup() {
     } else if (conditions.includes('skin') || conditions.includes('derma')) {
       return doctors.find(d => d.specialty === 'Dermatology') || doctors[0]
     } else {
-      // Assign to General Practice by default
       return doctors.find(d => d.specialty === 'General Practice') || doctors[0]
     }
   }

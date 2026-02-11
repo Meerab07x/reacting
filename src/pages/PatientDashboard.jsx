@@ -23,12 +23,10 @@ function PatientDashboard() {
       return
     }
 
-    // Load appointments for this patient
     const allAppointments = getAppointments()
     const myAppointments = allAppointments.filter(apt => apt.patientId === currentUser.id)
     setAppointments(myAppointments)
 
-    // Load all doctors
     setDoctors(getDoctors())
   }, [currentUser, userType, navigate])
 
@@ -52,10 +50,8 @@ function PatientDashboard() {
 
     saveAppointment(newAppointment)
     
-    // Update state
     setAppointments([...appointments, newAppointment])
     
-    // Reset form
     setBookingData({ doctorId: '', date: '', time: '', reason: '' })
     setShowBookingForm(false)
     
@@ -87,7 +83,6 @@ function PatientDashboard() {
     }
   }
 
-  // Get working days (Monday-Friday)
   const getMinDate = () => {
     const tomorrow = new Date()
     tomorrow.setDate(tomorrow.getDate() + 1)

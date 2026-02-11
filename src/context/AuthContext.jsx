@@ -4,11 +4,9 @@ const AuthContext = createContext()
 
 export function AuthProvider({ children }) {
   const [currentUser, setCurrentUser] = useState(null)
-  const [userType, setUserType] = useState(null) // 'patient' or 'doctor'
+  const [userType, setUserType] = useState(null) 
 
   const login = (email, password, type) => {
-    // In a real app, this would check against a database
-    // For now, we'll use our mock data
     if (type === 'patient') {
       const patient = JSON.parse(localStorage.getItem('patients') || '[]')
         .find(p => p.email === email && p.password === password)

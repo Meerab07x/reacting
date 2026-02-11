@@ -40,7 +40,6 @@ function DoctorDashboard() {
           : apt
       )
     )
-    // Clear the note after action
     setNotes(prev => ({ ...prev, [appointmentId]: '' }))
   }
 
